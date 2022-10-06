@@ -1,0 +1,18 @@
+[package]
+name = "user-page"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "0.49.0"
+aws-sdk-dynamodb = "0.19.0"
+actix-rt = "2.7.0"
+actix-web = "4"
+actix-cors = "0.6.3"
+serde = {version = "1.0.145", features = ["derive"] }
+serde_dynamo = { version = "4", features = ["aws-sdk-dynamodb+0_19"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1.8"
